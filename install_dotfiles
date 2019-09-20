@@ -4,11 +4,11 @@
 git_repo_url="https://github.com/Neo-101/dotfiles.git"
 config_alias="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 
-# echo "alias config='$config_alias'" >> $HOME/.bashrc
-# source $HOME/.bashrc
-# echo "$HOME/.cfg" >> $HOME/.gitignore
-# git clone --bare $git_repo_url $HOME/.cfg
-# $config_alias checkout ubuntu
-# $config_alias config --local status.showUntrackedFiles no
+echo "alias config='$config_alias'" >> $HOME/.bashrc
+source $HOME/.bashrc
+echo "$HOME/.cfg" >> $HOME/.gitignore
+git clone --bare $git_repo_url $HOME/.cfg
+$config_alias checkout ubuntu
+$config_alias config --local status.showUntrackedFiles no
 
 git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
