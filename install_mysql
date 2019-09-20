@@ -1,6 +1,5 @@
 #!/bin/bash
-DATA=/data
-local_deb="$DATA/mysql_apt_config.deb"
+local_deb="$HOME/mysql_apt_config.deb"
 sudo wget https://dev.mysql.com/get/mysql-apt-config_0.8.13-1_all.deb -O $local_deb
 sudo dpkg -i $local_deb
 sudo apt-get update

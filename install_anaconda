@@ -1,9 +1,8 @@
 #!/bin/bash
-DATA=/data
-local_sh="$DATA/anaconda3.sh"
+local_sh="$HOME/anaconda3.sh"
 wget https://repo.anaconda.com/archive/Anaconda3-2019.07-Linux-x86_64.sh -O $local_sh
-bash $local_sh -b -p $DATA/Anaconda3
-eval "$($DATA/Anaconda3/bin/conda shell.bash hook)"
+bash $local_sh -b -p $HOME/Anaconda3
+eval "$($HOME/Anaconda3/bin/conda shell.bash hook)"
 conda init
 rm $local_sh
 source $HOME/.bashrc
